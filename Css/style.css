@@ -1,0 +1,101 @@
+:root
+{
+    --bg-color: #0a6cf1;
+    --black: #000;
+    --white: #fff;
+    --ff: "Poppins",sans-serif;
+}
+/************** reset *****************/
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+body
+{
+    margin: 0;
+    font-family: var(--ff);
+}
+
+/********** main-styling ***************/
+.main-container
+{
+    height: 100dvh;
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container
+{
+    width: 35%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.input-container
+{
+    padding: 2rem;
+    background-color: var(--black);
+    border-radius: 10px;
+    display: flex;
+    gap: 2rem;
+    flex-basis: 100%;
+}
+
+.input-container input
+{
+    font-family: var(--ff);
+    font-weight: 700;
+    color: #080808;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 0;
+    padding: 1rem 1.5rem;
+    flex-basis: 70%;
+}
+
+.input-container button
+{
+    font-weight: 800;
+    color: #080808;
+    background-color: var(--white);
+    flex-basis: 30%;
+    border: 1px solid var(--black);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.input-container button:hover
+{
+    color: var(--white);
+    background-color: var(--black);
+    border: 1px solid var(--white);
+    box-shadow: 4px 4px 0px 2px var(--white);
+    transition: all 1s;
+}
+
+.date
+{
+    background-color: #080808;
+    color: #707070;
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 1rem;
+    border-radius: 10px;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.date span
+{
+    color: var(--white);
+    display: block;
+    font-size: 1.9rem;
+    font-weight: 700;
+}
+
